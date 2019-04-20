@@ -14,8 +14,8 @@ const checkForUpdate = require('update-check');
 const chalk = require('chalk');
 const arg = require('arg');
 const {write: copy} = require('clipboardy');
-const handler = require('serve-handler');
-const schema = require('@zeit/schemas/deployment/config-static');
+const handler = require('serve-handler-proxied');
+const schema = require('zeit-schemas-proxied/deployment/config-static');
 const boxen = require('boxen');
 const compression = require('compression');
 
